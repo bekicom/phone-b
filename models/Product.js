@@ -12,12 +12,7 @@ const productSchema = new mongoose.Schema({
     default: "sum",
   },
   sell_price: { type: Number, required: true },
-  sell_currency: {
-    type: String,
-    enum: ["usd", "sum"],
-    required: true,
-    default: "sum",
-  },
+
   brand_name: { type: String },
   storeProduct: { type: Boolean, default: false },
   count_type: { type: String, required: true },
