@@ -12,7 +12,7 @@ const productSchema = new mongoose.Schema({
     default: "sum",
   },
   sell_price: { type: Number, required: true },
-  currency: {
+  sell_currency: {
     type: String,
     enum: ["usd", "sum"],
     required: true,
