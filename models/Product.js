@@ -5,7 +5,7 @@ const productSchema = new mongoose.Schema({
   model: { type: String, required: true },
   stock: { type: Number, required: true },
   purchase_price: { type: Number, required: true },
-  purchase_currency: {
+  currency: {
     type: String,
     enum: ["usd", "sum"],
     required: true,
