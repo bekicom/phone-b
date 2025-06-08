@@ -5,18 +5,18 @@ const productSchema = new mongoose.Schema({
   model: { type: String, required: true },
   stock: { type: Number, required: true },
   purchase_price: { type: Number, required: true },
-  purchase_currency: {
+  currency: {
     type: String,
-    enum: ["usd", "uzs"],
+    enum: ["usd", "sum"],
     required: true,
-    default: "uzs",
+    default: "sum",
   },
   sell_price: { type: Number, required: true },
   sell_currency: {
     type: String,
-    enum: ["usd", "uzs"],
+    enum: ["usd", "sum"],
     required: true,
-    default: "uzs",
+    default: "sum",
   },
   brand_name: { type: String },
   storeProduct: { type: Boolean, default: false },
