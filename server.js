@@ -14,10 +14,11 @@ dbConfig.connectDB();
 const corsOptions = {
   origin: [
     "https://phone-f-ten.vercel.app",
-    "http://localhost:3000", // Backend lokal
+    "http://localhost:3000",
+    "http://45.136.16.207", // Backend lokal
   ],
   methods: ["GET", "POST", "PUT", "DELETE"], // Ruxsat etilgan HTTP metodlar
-  credentials: true, 
+  credentials: true,
 };
 
 app.use(cors(corsOptions));
